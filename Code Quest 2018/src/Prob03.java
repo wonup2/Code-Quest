@@ -26,6 +26,6 @@ public class Prob03 {
 		
 		out.print(result);
 		in.close();out.close();
-		Check.check("out.txt", file+".out.txt");
+		Check.check(file+".out.txt");
 	}
 }
