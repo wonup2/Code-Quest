@@ -31,6 +31,8 @@ public class eAutocorrect {
 				map.get(key).add(word);
 			}
 		}		
+		
+		System.out.println(map);
 	}
 	static void solve() {
 		for(int i=0; i<m; i++) {

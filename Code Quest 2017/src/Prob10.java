@@ -12,7 +12,6 @@ public class Prob10 {
 	
 	public static void main(String[] args)throws IOException{
 		in = new Scanner(new File(file+".in.txt"));
-		//in = new Scanner(System.in);
 		
 		out = new PrintWriter(new File("out.txt"));
 		
@@ -24,6 +23,7 @@ public class Prob10 {
 		}
 						
 		in.close();out.close();
+		
 		Check.check("out.txt", file+".out.txt");
 	}
 	

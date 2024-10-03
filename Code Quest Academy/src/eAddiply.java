@@ -15,5 +15,4 @@ public class eAddiply {
 		int b = in.nextInt();
 		System.out.println(a+b+" " +a*b);
 	}
-
 }

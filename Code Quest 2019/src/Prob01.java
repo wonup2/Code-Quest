@@ -25,7 +25,6 @@ public class Prob01 {
 		}
 						
 		in.close();out.close();
-		Check.check(file+".out.txt");
 	}
 	
 	static void init() {

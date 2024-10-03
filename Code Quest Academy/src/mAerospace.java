@@ -31,26 +31,18 @@ public class mAerospace {
 	
 	static void solve() {
 		
-		while(!list.isEmpty()) {
-			
-			Collections.sort(list);
-			
-			list.remove(0).destroy();
-			
+		while(!list.isEmpty()) {			
+			Collections.sort(list);			
+			list.remove(0).destroy();			
 			for(data d:list) d.move();			
 		}
 	}
 	
 	static class data implements Comparable<data>{
-		String name;
-		char c;
-		int x, y;
+		String name; char c; int x, y;
 		
 		data(String m, char cl, int a, int b){
-			name = m;
-			c = cl;
-			x = a; 
-			y = b;
+			name = m; c = cl; x = a; y = b;
 		}
 
 		void move() {
@@ -68,7 +60,6 @@ public class mAerospace {
 		}
 		@Override
 		public int compareTo(data o) {
-
 			if(this.x==o.x) return o.y-this.y;			
 			return this.x-o.x;
 		}	

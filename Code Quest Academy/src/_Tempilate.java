@@ -1,27 +1,48 @@
 import java.util.*;
 
 public class _Tempilate {
+	
 	static Scanner in;
-	static int n;
+	static int t, n;
 	
 	public static void main(String[] args) {
 
 		in = new Scanner (System.in);
-		n = in.nextInt(); in.nextLine();
-		while(n-->0) {
+		t = in.nextInt(); in.nextLine();
+		while(t-->0) {
 			init();
 			solve();
 		}	
-		
-		System.out.println(Double.parseDouble("NONE"));
 	}
 	
 	static void init() {
+		
+		n = in.nextInt();
 		
 		
 
 	}
 	static void solve() {
 		
+	}
+	
+	static class pair implements Comparable<pair>{
+
+		int len;
+		String word;
+		
+		pair(int x, String y){
+			len = x;
+			word = y;
+		}
+		
+		public String toString() {
+			return len+" "+word;
+		}
+		
+		@Override
+		public int compareTo(pair o) {
+			return this.len-o.len;
+		}
 	}
 }

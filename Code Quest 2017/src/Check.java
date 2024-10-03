@@ -1,4 +1,3 @@
-import java.io.File;
 import java.io.*;
 import java.util.*;
 
@@ -12,7 +11,9 @@ public class Check {
     	int wrong = 0;
 		while(mine.hasNextLine()&&correct.hasNextLine()){
 			line++;
-			if(!mine.nextLine().equals(correct.nextLine()))
+			String a = mine.nextLine().trim();
+			String b = correct.nextLine().trim();
+			if(!a.equals(b))
 			{
 				System.out.println("Wrong: " + line);
 				wrong++;

@@ -23,5 +23,4 @@ public class eBiggerisBetter {
 		System.out.println(a.get(a.size()-1));
 
 	}
-
 }
